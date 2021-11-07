@@ -13,7 +13,7 @@ describe('volleyballsa', () => {
         `;
         const timezone = 'Australia/Adelaide';
 
-        const expected = new Date('2020-01-22T08:15:00.000Z');
+        const expected = new Date(`${(new Date()).getFullYear()}-01-22T08:15:00.000Z`);
 
         const actual = extractor.extractDateTimeFromTr(tr, timezone);
 
@@ -28,7 +28,7 @@ describe('volleyballsa', () => {
         `;
         const timezone = 'Australia/Adelaide';
 
-        const expected = new Date('2020-07-03T23:50:00.000Z');
+        const expected = new Date(`${(new Date()).getFullYear()}-07-03T23:50:00.000Z`);
 
         const actual = extractor.extractDateTimeFromTr(tr, timezone);
 
@@ -118,7 +118,7 @@ describe('volleyballsa', () => {
 
         const expected = [{
           type: 'duty',
-          time: new Date('2020-01-22T00:50:00.000Z'),
+          time: new Date(`${(new Date()).getFullYear()}-01-22T00:50:00.000Z`),
           timezone,
           duration,
           court: 'Court 1',
