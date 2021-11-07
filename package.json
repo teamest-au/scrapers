@@ -1,6 +1,6 @@
 {
   "name": "@teamest/scrapers",
-  "version": "0.4.0",
+  "version": "0.5.0",
   "description": "Scraper modules to collect volleyball draw data from various websites and format it consistently",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
